@@ -28,7 +28,7 @@ namespace _13thLessonInheritance_Polymorphism
 
 
         public override string ToString()
-            => $"{Name} has an area of {Area} sq. units and perimeter of {Perimeter} units";
+            => $"{Name} has an area of {Area:F3} sq. units and perimeter of {Perimeter:F3} units";
     }
 
     public class Triangle : Shape
@@ -256,7 +256,7 @@ namespace _13thLessonInheritance_Polymorphism
         {
            
             Random rand = new Random();
-            int randomColor = rand.Next(0, 15);
+            int randomColor = rand.Next(0, 13);
             return (ConsoleColor)(MyConsoleColor)randomColor;
 
         }
@@ -268,8 +268,6 @@ namespace _13thLessonInheritance_Polymorphism
             DarkRed = ConsoleColor.DarkRed,
             DarkMagenta = ConsoleColor.DarkMagenta,
             DarkYellow = ConsoleColor.DarkYellow,
-            Gray = ConsoleColor.Gray,
-            DarkGray = ConsoleColor.DarkGray,
             Blue = ConsoleColor.Blue,
             Green = ConsoleColor.Green,
             Cyan = ConsoleColor.Cyan,
